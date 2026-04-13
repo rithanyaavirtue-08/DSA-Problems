@@ -1,0 +1,29 @@
+/*
+Container With Most Water - Easy Explanation
+
+We use two pointers:
+left starts at the beginning
+right starts at the end
+
+At each step:
+1. Calculate width = right - left
+2. Find smaller height using Math.min()
+3. Area = width * smaller height
+4. Update max area
+5. Move the smaller height pointer
+
+Reason:
+The smaller wall limits the water level.
+So moving the smaller pointer may help find a taller wall.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+Memory Trick:
+calculate area -> update max -> move smaller pointer
+*/
+
+width=index num only(right - left);
+h=Math.min(heigth[left],height[right];
+area=width*h;
+checkinggg....

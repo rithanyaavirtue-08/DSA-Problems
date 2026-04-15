@@ -1,0 +1,35 @@
+# Beauty Sum of All Substrings
+
+## Problem Idea
+For every substring in the given string:
+1. Count frequency of each character
+2. Find the maximum frequency
+3. Find the minimum frequency
+4. Beauty = max - min
+5. Add it to total
+
+Return the final total.
+
+---
+
+## What is Beauty?
+Beauty means:
+
+beauty = max frequency - min frequency
+
+Example:
+substring = "aab"
+
+a = 2
+b = 1
+
+beauty = 2 - 1 = 1
+
+---
+
+## Logic Used
+We use **3 loops**
+
+### 1. First Loop → Starting Index
+```java
+for(int i=0; i<s.length(); i++)

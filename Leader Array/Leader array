@@ -1,0 +1,16 @@
+class Solution {
+    static ArrayList<Integer> leaders(int arr[]) {
+       ArrayList<Integer> leader=new ArrayList<>();
+       int max=arr[arr.length-1];
+       leader.add(max);
+       for(int i=arr.length-2;i>=0;i--){
+           if(arr[i]>=max){
+               max=arr[i];
+               leader.add(max);
+           }
+       }
+       Collections.reverse(leader);//if 1234 gives 4321 example it reverse the array here
+       return leader;
+
+    }
+}

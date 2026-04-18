@@ -1,0 +1,34 @@
+class Solution {
+    public List<Integer> spiralOrder(int[][] matrix) {
+        ArrayList<Integer> spiral=new ArrayList<>();
+         int clStart=0;
+         int rowStart=0;
+         int rowEnd=matrix.length-1;
+         int clEnd=matrix[0].length-1;
+while(clStart<=clEnd && rowStart<=rowEnd){
+         for(int i=clStart;i<=clEnd;i++){
+            spiral.add(matrix[rowStart][i]);
+         }
+         rowStart++;
+           for(int i=rowStart;i<=rowEnd;i++){
+             spiral.add(matrix[i][clEnd]);
+           }
+           clEnd--;
+           if(rowStart<=rowEnd){
+           for(int i=clEnd;i>=clStart;i--){
+            spiral.add(matrix[rowEnd][i]);
+           }
+           rowEnd--;}
+           if(clStart<=clEnd){
+           for(int i=rowEnd;i>=rowStart;i--){
+            spiral.add(matrix[i][clStart]);
+           }
+        clStart++;
+           }
+}
+        return spiral;
+
+
+    }
+
+}

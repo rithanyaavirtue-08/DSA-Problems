@@ -1,0 +1,18 @@
+class Solution {
+    public int findMin(int[] nums) {
+        int low=0;
+        int high=nums.length-1;
+
+        while(low<high){
+            int mid=(low+high)/2;
+
+            if(nums[mid]<=nums[high]){  //check only to find low ,so high is more make it as mid
+                high=mid;
+            }
+            else{
+                low=mid+1;   // taking only low value;
+            }
+        }
+        return nums[low];// returning low value because low and high are same at the end of loop
+            }
+}

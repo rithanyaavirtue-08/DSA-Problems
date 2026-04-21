@@ -1,7 +1,24 @@
 class Solution {
     int floorSqrt(int n) {
+     int low=0;
+     int high=n;
+     int ans=0;//just to take the num comes like 2.5 as 2 to return it not ==
+     while(low<=high){
+          int mid=(low+high)/2;
+         if((mid*mid)==n){
+             return mid ;
+             }
+         else if((mid*mid)<n){
+                 low=mid+1;
+                 ans=mid;
 
-       int ans=(int)Math.sqrt(n);
-        return ans;
+         }
+         else{
+             high=mid-1;
+         }
+
+     }
+
+     return ans;
     }
 }

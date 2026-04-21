@@ -1,0 +1,7 @@
+class Solution {
+    int floorSqrt(int n) {
+
+       int ans=(int)Math.sqrt(n);
+        return ans;
+    }
+}

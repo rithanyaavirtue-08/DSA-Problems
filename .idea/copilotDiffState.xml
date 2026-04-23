@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/DSA-Problems/240. Search a 2D Matrix II/README.md">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/DSA-Problems/240. Search a 2D Matrix II/README.md" />
+              <option name="updatedContent" value="# 240. Search a 2D Matrix II&#10;&#10;## Problem Description&#10;Search for a target value in a 2D matrix where:&#10;- Integers in each row are sorted in ascending order&#10;- Integers in each column are sorted in ascending order&#10;&#10;Return `true` if the target is found, otherwise return `false`.&#10;&#10;### Example&#10;- Input: `matrix = [[1,4,7,11],[2,5,8,12],[3,6,9,16],[10,13,14,17]]`, `target = 13`&#10;- Output: `true`&#10;&#10;- Input: `matrix = [[1,4,7,11],[2,5,8,12],[3,6,9,16],[10,13,14,17]]`, `target = 18`&#10;- Output: `false`&#10;&#10;## Approach&#10;The solution uses **binary search on each row**:&#10;1. Loop through each row of the matrix&#10;2. Perform binary search on that row to find the target&#10;3. If found, return `true`&#10;4. If not found in any row, return `false`&#10;&#10;This works because each row is sorted independently.&#10;&#10;## Complexity Analysis&#10;- **Time Complexity**: O(m × log n) - where m is the number of rows and n is the number of columns (binary search on each row)&#10;- **Space Complexity**: O(1) - only constant extra space used&#10;&#10;## Optimized Approach&#10;A more efficient solution exists using a staircase approach (O(m + n)), where you start from top-right or bottom-left corner and eliminate a row or column with each comparison.&#10;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

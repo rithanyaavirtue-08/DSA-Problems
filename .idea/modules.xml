@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DSA-Problems/AmstrongNumbers/ArmstrongNumbers.iml" filepath="$PROJECT_DIR$/DSA-Problems/AmstrongNumbers/ArmstrongNumbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA-Problems/CountOfNumbers/CountOfNumbers.iml" filepath="$PROJECT_DIR$/DSA-Problems/CountOfNumbers/CountOfNumbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA.iml" filepath="$PROJECT_DIR$/DSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA-Problems/DivisorsOfNumber/DivisorsOfNumber.iml" filepath="$PROJECT_DIR$/DSA-Problems/DivisorsOfNumber/DivisorsOfNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA-Problems/GCD/GCD.iml" filepath="$PROJECT_DIR$/DSA-Problems/GCD/GCD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA-Problems/Palindrome/Palindrome.iml" filepath="$PROJECT_DIR$/DSA-Problems/Palindrome/Palindrome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pallindrome/Pallindrome.iml" filepath="$PROJECT_DIR$/Pallindrome/Pallindrome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA-Problems/Prime Numbers/Prime Numbers.iml" filepath="$PROJECT_DIR$/DSA-Problems/Prime Numbers/Prime Numbers.iml" />
+    </modules>
+  </component>
+</project>

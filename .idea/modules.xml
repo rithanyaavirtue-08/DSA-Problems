@@ -9,7 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/DSA-Problems/GCD/GCD.iml" filepath="$PROJECT_DIR$/DSA-Problems/GCD/GCD.iml" />
       <module fileurl="file://$PROJECT_DIR$/DSA-Problems/Palindrome/Palindrome.iml" filepath="$PROJECT_DIR$/DSA-Problems/Palindrome/Palindrome.iml" />
       <module fileurl="file://$PROJECT_DIR$/Pallindrome/Pallindrome.iml" filepath="$PROJECT_DIR$/Pallindrome/Pallindrome.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DSA-Problems/Prime Numbers/Prime Numbers.iml" filepath="$PROJECT_DIR$/DSA-Problems/Prime Numbers/Prime Numbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA-Problems/PrimeNumbers/PrimeNumbers.iml" filepath="$PROJECT_DIR$/DSA-Problems/PrimeNumbers/PrimeNumbers.iml" />
     </modules>
   </component>
 </project>

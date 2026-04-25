@@ -4,5 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/DSA-Problems" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/DSA-Problems/DSA-Problems" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Grocq/Grocq" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Grocq/Grocq/zupp-backend" vcs="Git" />
   </component>
 </project>

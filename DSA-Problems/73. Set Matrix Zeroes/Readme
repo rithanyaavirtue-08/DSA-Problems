@@ -1,0 +1,7 @@
+Here we are trying to make zero where the zero is present and then for that zero row and column also
+need to make it as zero ,then here boolean is used ,for the boolean array also we have given the matrix length
+so if it is zero in boolean we make true which means the boolean all will be in false only
+    false =0
+    true=1
+    if it has zero is make true , so marked in next loop same run but check the boolean thing if it is zero
+    make all i and j in prent loop as zero

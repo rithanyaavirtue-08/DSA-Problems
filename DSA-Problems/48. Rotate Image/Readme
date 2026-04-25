@@ -1,0 +1,25 @@
+
+
+1. Take the given n x n matrix.
+2. Start with **transpose**:
+
+   * Swap `matrix[i][j]` with `matrix[j][i]`
+   * Use a `temp` variable for swapping
+   * Run inner loop from `j = i` (to avoid double swapping)
+3. After transpose, move to **reverse each row**:
+
+   * For every row, set `left = 0` and `right = n-1`
+   * Swap elements while `left < right`
+   * Move `left++` and `right--`
+4. After completing both steps, the matrix is rotated 90° clockwise.
+
+## Key Points
+
+* Do **not** assign directly like matrix[j][i] = matrix[i][j] (it will overwrite values)
+* Always use swapping with a temporary variable
+* Start transpose loop from diagonal (`j = i`)
+* Reverse each row completely
+
+## Trick to Remember
+
+Transpose → Reverse Rows = 90° Clockwise Rotation

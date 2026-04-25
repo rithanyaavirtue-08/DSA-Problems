@@ -1,0 +1,20 @@
+class Solution {
+    public int majorityElement(int[] nums) {
+        HashMap<Integer,Integer> map =new HashMap<>();
+        for(int i=0;i<nums.length;i++){
+                map.put(nums[i],map.getOrDefault(nums[i],0)+1);
+
+        }
+        int count=0;
+        int ans=nums[0];
+        for(int i=0;i<nums.length;i++){
+            if(count<map.get(nums[i])){
+                count=map.get(nums[i]);
+                ans=nums[i];
+            }
+        }
+        return ans;
+    }
+}
+//here we are doing that in map we cant take the key as num and the
+//value as count ,by that taking and running the for loop we can get the final number;

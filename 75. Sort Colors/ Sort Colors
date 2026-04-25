@@ -1,0 +1,29 @@
+class Solution {
+    public void sortColors(int[] nums) {
+       int low=0;
+       int mid=0;
+       int high=nums.length-1;
+
+       while(mid<=high){
+        if(nums[mid]==0){
+            int temp=nums[mid];
+            nums[mid]=nums[low];
+            nums[low]=temp;
+            low++;
+            mid++;
+        }
+        else if(nums[mid]==1){
+            mid++;
+        }
+        else{
+            int temp=nums[mid];
+            nums[mid]=nums[high];
+            nums[high]=temp;
+            high--;
+        }
+       }
+    }
+}
+//we check here only with mid because its the centre and then
+//here onlt three cases so check condition is 0,1 and high is 2
+// the calculation might me easy

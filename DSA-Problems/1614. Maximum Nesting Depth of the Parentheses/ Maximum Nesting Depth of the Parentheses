@@ -1,0 +1,20 @@
+class Solution {
+    public int maxDepth(String s) {
+        int open=0;
+        int max=0;
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)=='('){
+                open++;
+                if(max<open){
+                    max++;
+                }
+            }
+            else if(s.charAt(i)==')'){
+                open--;
+            }
+        }
+        return max;
+    }
+}
+open ( then ++ ,if ) do open --
+max check with open ,if open is greater than max so it will increase max++

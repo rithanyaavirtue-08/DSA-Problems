@@ -1,0 +1,43 @@
+class Solution {
+    public static ArrayList<Integer> findUnion(int a[], int b[]) {
+        ArrayList<Integer> result = new ArrayList<>();
+        int i = 0, j = 0;
+        int n = a.length;
+        int m = b.length; // Fixed: replaced .length() with .length
+
+        while (i < n && j < m) {
+            if (a[i] <= b[j]) {
+                // Add a[i] if it's not a duplicate of the last element added
+                if (result.isEmpty() || result.get(result.size() - 1) != a[i]) {
+                    result.add(a[i]);
+                }
+                if (a[i] == b[j]) j++; // If elements are same, move both pointers
+                i++;
+            } else {
+                // Add b[j] if it's not a duplicate
+                if (result.isEmpty() || result.get(result.size() - 1) != b[j]) {
+                    result.add(b[j]);
+                }
+                j++;
+            }
+        }
+
+        // Add remaining elements from array a
+        while (i < n) {
+            if (result.get(result.size() - 1) != a[i]) {
+                result.add(a[i]);
+            }
+            i++;
+        }
+
+        // Add remaining elements from array b
+        while (j < m) {
+            if (result.get(result.size() - 1) != b[j]) {
+                result.add(b[j]);
+            }
+            j++;
+        }
+
+        return result;
+    }
+}

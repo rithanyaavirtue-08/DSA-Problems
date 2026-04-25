@@ -1,0 +1,81 @@
+# Spiral Order Traversal (2D Matrix)
+
+## Idea
+
+The goal is to print all elements of a matrix in **spiral order**.
+Instead of moving randomly, we control the movement using **4 boundaries**:
+
+* `rowStart` → top boundary
+* `rowEnd` → bottom boundary
+* `clStart` → left boundary
+* `clEnd` → right boundary
+
+We keep shrinking these boundaries after every step.
+## Steps to Follow
+
+1. Initialize:
+
+   * `rowStart = 0`
+   * `rowEnd = matrix.length - 1`
+   * `clStart = 0`
+   * `clEnd = matrix[0].length - 1`
+
+2. Run a loop while:
+
+   rowStart <= rowEnd AND clStart <= clEnd
+3. Traverse in 4 directions:
+
+   ### ➤ Step 1: Left → Right (Top Row)
+
+   * Loop from `clStart` to `clEnd`
+   * Add `matrix[rowStart][i]`
+   * Move `rowStart++`
+
+   ### ➤ Step 2: Top → Bottom (Right Column)
+
+   * Loop from `rowStart` to `rowEnd`
+   * Add `matrix[i][clEnd]`
+   * Move `clEnd--`
+
+   ###  Step 3: Right → Left (Bottom Row)
+
+   * Only if `rowStart <= rowEnd`
+   * Loop from `clEnd` to `clStart`
+   * Add `matrix[rowEnd][i]`
+   * Move `rowEnd--`
+
+   ###  Step 4: Bottom → Top (Left Column)
+
+   * Only if `clStart <= clEnd`
+   * Loop from `rowEnd` to `rowStart`
+   * Add `matrix[i][clStart]`
+   * Move `clStart++`
+
+---
+
+## Key Points
+
+* Always check conditions before Step 3 and Step 4
+  → to avoid duplicate elements
+* After each direction, **shrink the boundary**
+* Continue until all elements are visited
+
+---
+
+## Trick to Remember
+
+Top Row → Right Column → Bottom Row → Left Column
+(Repeat by shrinking boundaries)
+
+---
+
+## Output
+
+* Store elements in a list (`ArrayList`)
+* Return the list at the end
+
+
+## Summary
+
+We are not rotating or modifying the matrix.
+We are just **reading elements layer by layer in spiral form** using boundaries.

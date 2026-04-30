@@ -19,3 +19,8 @@ class Solution {
 
     }
 }
+//example: "Hello World" => "World Hello"
+word = "Hello"
+sentence = "Hello "
+word = "World" sentence =word +" "+sentence =>
+sentence = "World Hello "

@@ -19,16 +19,3 @@ class Solution {
 
     }
 }
-
-## trim() in Java
-
-The `trim()` method is used to remove extra spaces from the **beginning and end** of a string.
-
-It does **not remove spaces between words**.
-
-### Example
-java
-String s = "  hello world  ";
-System.out.println(s.trim());
-
- here we are storing word one by one the adding from last word

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/217.Contains Duplicates/README.md">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/217.Contains Duplicates/README.md" />
+              <option name="updatedContent" value="# 217. Contains Duplicates&#10;&#10;## Problem Description&#10;Given an integer array `nums`, return `true` if any value appears at least twice in the array, and return `false` if every element is distinct.&#10;&#10;### Example&#10;- Input: `nums = [1,2,3,1]`&#10;- Output: `true`&#10;- Explanation: The element 1 appears twice.&#10;&#10;- Input: `nums = [1,2,3,4]`&#10;- Output: `false`&#10;- Explanation: All elements are distinct.&#10;&#10;## Easy Explanation&#10;Imagine you have a list of numbers. You need to check if any number repeats. If yes, return true; if all are unique, return false.&#10;&#10;## Approach&#10;1. Use a HashSet to store unique elements as you iterate through the array&#10;2. For each number:&#10;   - If it's already in the set, return true (duplicate found)&#10;   - If not, add it to the set&#10;3. If you finish checking all numbers without finding duplicates, return false&#10;&#10;## Why HashSet?&#10;- HashSet allows O(1) average time for add and contains operations&#10;- Perfect for checking uniqueness quickly&#10;&#10;## Time Complexity&#10;- O(n) - We iterate through the array once, each operation is O(1) on average&#10;&#10;## Space Complexity&#10;- O(n) - In worst case, all elements are unique and stored in the set&#10;&#10;## Key Points to Remember&#10;- HashSet is ideal for uniqueness checks&#10;- Early return when duplicate is found saves time&#10;- Works for any data type that can be hashed&#10;- Alternative: Sort array and check adjacent elements (O(n log n) time)" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

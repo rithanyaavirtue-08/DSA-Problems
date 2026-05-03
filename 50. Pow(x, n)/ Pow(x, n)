@@ -19,4 +19,4 @@ class Solution {
         return result;
 
     }
-}
+}gu ides us to calculate the power of a number efficiently by using the properties of exponents. When n is even, we can express x^n as (x^(n/2))^2, which allows us to compute the result with fewer multiplications. When n is odd, we can express x^n as x * (x^(n-1)), which also reduces the number of multiplications needed. This approach significantly improves the performance of the algorithm, especially for large values of n.

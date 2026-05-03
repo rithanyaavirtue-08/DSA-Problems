@@ -20,3 +20,4 @@ class Solution {
 
     }
 }
+//here we are using the concept of exponentiation by squaring, which can reduce the number of multiplications needed to calculate x^n. When n is even, we can square x and half n, and when n is odd, we can multiply x to the result and then make n even. This way we can calculate the result in logarithmic time complexity.

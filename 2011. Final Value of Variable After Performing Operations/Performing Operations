@@ -13,4 +13,5 @@ class Solution {
     }
 }
 // here we are checking for the operations
-and if it is --X or X-- then we will decrease the value of X by 1 and if it is ++X or X++ then we will increase the value of X by 1 and at the end we will return the final value of X
+and if it is --X or X-- then we will decrease
+the value of X by 1 and if it is ++X or X++ then we will increase the value of X by 1 and at the end we will return the final value of X

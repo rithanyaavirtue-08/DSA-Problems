@@ -1,0 +1,35 @@
+class Solution {
+    public int findPages(int[] arr, int k) {
+        if(arr.length<k){
+            return -1;
+        }
+       int low=0;
+       int high=0;
+       for(int i=0;i<arr.length;i++){
+           low = Math.max(low, arr[i]);
+           high+=arr[i];
+       }
+       while(low<=high){
+           int currentStudent=1;
+            int pagecount=0;
+           int mid=(low+high)/2;
+           for(int i=0;i<arr.length;i++){
+               if(pagecount + arr[i] <= mid){
+                     pagecount += arr[i];
+                }
+               else{
+                  currentStudent++;
+                 pagecount = arr[i];
+              }
+
+           }
+           if(currentStudent<=k){
+                high=mid-1;
+           }
+           else{
+              low=mid+1;
+           }
+       }
+       return low;
+    }
+}

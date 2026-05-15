@@ -19,6 +19,14 @@
             </PendingDiffInfo>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/410. SplitArrayLargestSum/README.md">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/410. SplitArrayLargestSum/README.md" />
+              <option name="updatedContent" value="# 410. Split Array Largest Sum&#10;&#10;## Problem Description&#10;Given an array `nums` and an integer `k`, split the array into `k` non-empty contiguous subarrays such that the largest sum of any subarray is minimized.&#10;&#10;Return the minimized largest sum of the split.&#10;&#10;### Example&#10;- Input: `nums = [7,2,5,10,8]`, `k = 2`&#10;- Output: `18`&#10;- Explanation: Split into [7,2,5] (sum=14) and [10,8] (sum=18), largest sum is 18.&#10;&#10;## Easy Explanation&#10;You need to split an array into k parts where each part is a contiguous section. The goal is to minimize the maximum sum among these parts.&#10;&#10;Think of it as distributing the array elements into k groups, keeping them in order, and making sure the group with the highest sum is as small as possible.&#10;&#10;## Approach&#10;&#10;**Step 1:** Set binary search bounds&#10;- Low = maximum element in array (each group needs at least one element)&#10;- High = sum of all elements (one group takes everything)&#10;&#10;**Step 2:** Binary search on the answer&#10;- For a given max sum limit, check if we can split into k groups where no group exceeds this sum&#10;- If possible, try smaller limit (high = mid - 1), save answer&#10;- If not possible, increase limit (low = mid + 1)&#10;&#10;**Step 3:** Check feasibility for a given limit&#10;- Greedily add elements to current group until adding next would exceed limit&#10;- Start new group when limit exceeded&#10;- Count total groups needed&#10;&#10;## Why Binary Search Works?&#10;- If we can split with max sum = X, we can also do it with X+1, X+2, etc.&#10;- We search for the minimum X where splitting into k groups is possible&#10;- This monotonic property makes binary search perfect&#10;&#10;## Time Complexity&#10;- O(n log(sum of array)) where n = array length, sum = total elements&#10;&#10;## Space Complexity&#10;- O(1) - only constant extra space&#10;&#10;## Key Points to Remember&#10;- Subarrays must be contiguous (no rearranging elements)&#10;- Each subarray must be non-empty&#10;- We minimize the maximum subarray sum (not total sum)&#10;- Binary search on answer, not on array indices&#10;- Greedy feasibility check within binary search&#10;- Similar to &quot;Allocate Minimum Pages&quot; problem" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Allocate Minimum Pages/README.md">
           <value>
             <PendingDiffInfo>

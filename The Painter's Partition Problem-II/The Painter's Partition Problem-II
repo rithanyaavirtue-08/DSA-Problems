@@ -1,0 +1,31 @@
+class Solution {
+    public int minTime(int[] arr, int k) {
+        int low=0;
+        int high=0;
+        for(int i:arr){
+            low=Math.max(low,i);
+            high+=i;
+        }
+        while(low<=high){
+            int peopleCount=1;
+            int timecount=0;
+            int mid=(low+high)/2;
+            for(int i:arr){
+                if(timecount+i<=mid){
+                    timecount+=i;
+                }
+                else{
+                    timecount=i;
+                    peopleCount++;
+                }
+            }
+            if(peopleCount<=k){
+            high=mid-1;
+            }
+            else{
+               low=mid+1;
+            }
+        }
+        return low;
+    }
+}

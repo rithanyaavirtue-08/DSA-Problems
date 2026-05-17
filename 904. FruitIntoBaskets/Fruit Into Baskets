@@ -20,4 +20,4 @@ class Solution {
     return max;
     }
 }
-//sdv
+//same as longest consecutive ones but here we are using hash map to store the value of the fruit and its count and then we are checking if the size of the map is greater than 2 then we are removing the left pointer and then we are calculating the max length of the subarray which is the answer.

@@ -14,4 +14,4 @@ class Solution {
 
         return false;
     }
-}// here we are storing the index of the element in the map and if we find the same element again then we check if the difference of the current index and the index stored in the map is less than or equal to k then we return true else we update the index in the map to the current index
+}/ here we are storing the index of the element in the map and if we find the same element again then we check if the difference of the current index and the index stored in the map is less than or equal to k then we return true else we update the index in the map to the current index

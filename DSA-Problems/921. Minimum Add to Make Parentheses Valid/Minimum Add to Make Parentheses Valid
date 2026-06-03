@@ -1,0 +1,43 @@
+class Solution {
+    public int minAddToMakeValid(String s) {
+        int count=0;
+        int ans=0;
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)=='('){
+                count++;
+            }
+            else{
+            if(count>0){
+                count--;
+
+            }
+            else{
+ ans++;class Solution {
+           public int repeatedStringMatch(String a, String b) {
+               int count=1;
+               String original=a;
+           while(a.length()<b.length()){
+               a=a+original;
+               count++;
+           }
+           if(a.contains(b)){
+               return count;
+           }
+            a = a + original;
+               count++;
+
+               if(a.contains(b)){
+                   return count;
+               }
+
+               return -1;
+
+           }
+       }
+            }}
+        }
+
+        return count+ans;
+
+    }
+}

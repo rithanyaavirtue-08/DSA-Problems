@@ -1,0 +1,16 @@
+class Solution {
+    public int[] buildArray(int[] nums) {
+        int []ans=new int[nums.length];
+        for(int i=0;i<nums.length;i++){
+          ans[i]=nums[nums[i]];
+        }
+        return ans;
+    }
+}
+
+/*
+ * permutation means to rearrange the elements of an array in a specific order.
+ * In this problem we are given an array of integers where each element is a unique
+ * integer from 0 to n-1. We build a new array where the value at index i is
+ * nums[nums[i]] from the original array.
+ */

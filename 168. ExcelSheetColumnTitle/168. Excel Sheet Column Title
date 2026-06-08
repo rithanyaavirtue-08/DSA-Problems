@@ -1,0 +1,22 @@
+class Solution {
+    public String convertToTitle(int columnNumber) {
+        StringBuilder ans=new StringBuilder();
+
+    while(columnNumber>0){
+        columnNumber--;
+        int num1=columnNumber%26;
+        char ch = (char)('A' + num1);
+        ans.append(ch);
+        columnNumber=columnNumber/26;
+
+    }
+          return ans.reverse().toString();
+    }
+
+
+}
+logic:
+1. We initialize an empty StringBuilder to build the resulting string.
+2. We use a while loop that continues until columnNumber becomes 0.
+3. Inside the loop, we decrement columnNumber by 1 to adjust for 0-based
+    indexing.

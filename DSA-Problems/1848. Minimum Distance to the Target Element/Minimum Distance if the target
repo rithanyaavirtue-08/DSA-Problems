@@ -14,3 +14,4 @@ class Solution {
     }
 }
 //min used to find the lowest value for it and then ,integer max used to get the maximum value of the number
+//

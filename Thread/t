@@ -41,4 +41,5 @@ class Solution extends Thread{
 }
 
 //lambada
+//volatile
 

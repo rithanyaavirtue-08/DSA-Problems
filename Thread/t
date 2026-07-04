@@ -44,4 +44,5 @@ class Solution extends Thread{
 //volatile
 //synchronized
 //wait
+//notify
 

@@ -42,4 +42,4 @@ class Solution extends Thread{
 
 //lambada
 //
-//
+// 1. We create a new Thread object objThread2 and pass a lambda expression as the Runnable implementation. This lambda expression defines the code that will be executed when the thread is started. In this case, it prints a message and the hash code of the sharedObject.

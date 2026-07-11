@@ -40,4 +40,4 @@ class Solution extends Thread{
 
 }
 
-//\read is started. In this case, it prints a message and the hash code of the sharedObject.
+//\d is started. In this case, it prints a message and the hash code of the sharedObject.

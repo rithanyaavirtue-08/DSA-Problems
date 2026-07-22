@@ -43,4 +43,3 @@ class Solution extends Thread{
 //  it prints a message
 and the hash code of the shared object.
 The main thread creates two additional threads (Thread 2 and Thread 3) that also print messages and the hash code of the shared object.
-Thread 3

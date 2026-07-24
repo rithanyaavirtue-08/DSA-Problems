@@ -1,0 +1,40 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int p1 = sc.nextInt();
+        int p2 = sc.nextInt();
+        int p3 = sc.nextInt();
+        int maxDigit = 0;
+        int temp1 = p1, temp2 = p2, temp3 = p3;
+
+        while (temp1 > 0 || temp2 > 0 || temp3 > 0) {
+            maxDigit = Math.max(maxDigit, temp1 % 10);
+            maxDigit = Math.max(maxDigit, temp2 % 10);
+            maxDigit = Math.max(maxDigit, temp3 % 10);
+
+            temp1 /= 10;
+            temp2 /= 10;
+            temp3 /= 10;
+        }
+
+
+        int u1 = p1 % 10, u2 = p2 % 10, u3 = p3 % 10;
+        int t1 = (p1 / 10) % 10, t2 = (p2 / 10) % 10, t3 = (p3 / 10) % 10;
+        int h1 = (p1 / 100) % 10, h2 = (p2 / 100) % 10, h3 = (p3 / 100) % 10;
+
+
+        int minUnits = Math.min(u1, Math.min(u2, u3));
+        int minTens = Math.min(t1, Math.min(t2, t3));
+        int minHundreds = Math.min(h1, Math.min(h2, h3));
+
+
+        int pin = (maxDigit * 1000) + (minHundreds * 100) + (minTens * 10) + minUnits;
+
+        System.out.print(pin);
+    }
+}

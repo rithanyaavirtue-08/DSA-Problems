@@ -28,18 +28,6 @@ class Solution extends Thread{
                         throw new RuntimeException(e);
                     }
 
-                    System.out.println("Thread 3 completed");
-                };
-
-                Thread objThread3 = new Thread(objRunnable);
-                objThread3.start();
-
-                System.out.println("Main Thread ended");
-            }
-
-
-}
-
 
 and the hash code of the shared object.
 The main thread creates two additional threads (Thread 2 and Thread 3) that also print messages and the hash code of the shared object.
